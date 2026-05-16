@@ -1,0 +1,11 @@
+.button {
+  box-sizing: border-box;
+  @include btn-reset;
+  display: block;
+  background-color: $color-accent;
+  padding: 21px 23px 20px 23px;
+     @include font($size: 16px, $weight: 500);
+     cursor: pointer;
+     border: 1px solid transparent;
+}
+

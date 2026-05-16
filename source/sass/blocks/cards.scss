@@ -1,0 +1,11 @@
+.cards {
+  padding-top: 56px;
+  padding-bottom: 19px;
+}
+
+.cards__list {
+@include list-reset;
+
+display: flex;
+gap: 31px;
+}

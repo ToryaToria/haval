@@ -1,6 +1,6 @@
 @mixin font(
   $size,
-  $line-height: auto,
+  $line-height: 120%,
   $weight: 400,
   $color: $color-white
 ) {
@@ -21,7 +21,7 @@
 }
 
 @mixin btn-reset {
-  padding: 0;
+    padding: 0;
   border: none;
   background-color: transparent;
 }

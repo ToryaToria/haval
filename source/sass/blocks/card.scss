@@ -1,0 +1,108 @@
+.card {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 560px;
+  padding-top: 22px;
+}
+
+.card__tag {
+  box-sizing: border-box;
+  width: 187px;
+  height: 42px;
+  padding: 7px 20px;
+
+  position: absolute;
+  top: 0;
+  right: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: $color-accent;
+
+  &--count {
+    color: $color-black;
+  }
+}
+
+.card__container {
+  background-color: $color-bg;
+  padding: 39px 40px 40px 40px;
+}
+
+.card__wrapp {
+  box-sizing: border-box;
+  padding: 24px 24px 0 24px;
+  width: 480px;
+  height: 356px;
+  border: 1px solid $color-border-card;
+
+  margin-bottom: 26px;
+
+  background-color: $color-white;
+  background-image: url(../../img/cars/card-bg.svg);
+
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.card__header {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px 0;
+  margin-bottom: 13px;
+}
+
+.card__sign-up {
+  @include btn-reset;
+  display: block;
+  @include font($size: 12px, $color: $color-black);
+  text-align: right;
+  width: 153px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: 3px;
+}
+
+.card__img {
+  display: block;
+  width: 467px;
+  height: 239px;
+  object-fit: contain;
+}
+
+.card__slider {
+display: flex;
+overflow-y: hidden;
+}
+
+.card__benefit {
+@include list-reset;
+display: flex;
+gap: 13px;
+
+flex-wrap: wrap;
+margin-bottom: 32px;
+}
+
+.card__btn {
+  width: 100%;
+  margin-bottom: 10px;
+      font-size: 14px;
+
+
+  &--credit {
+    color: $color-white;
+    background-color: $color-black;
+  }
+
+  &--complete {
+    color: $color-black;
+    background-color: transparent;
+    border: 1px solid $color-black;
+  }
+}

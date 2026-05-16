@@ -1,0 +1,63 @@
+.header {
+  background-color: $color-black;
+}
+
+// .header__container {
+// }
+
+.header__wrapper {
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__tel {
+  @include font($size: 15px, $weight: 500);
+  color: $color-white;
+  text-decoration: none;
+}
+
+.header__address {
+  max-width: 401px;
+  font-style: normal;
+
+    color: $color-white;
+}
+
+.header__nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid $color-white-20;
+}
+
+.header__list {
+  @include list-reset;
+  max-width: 650px;
+  display: flex;
+  gap: 14px;
+}
+
+.header__wrapp-btn {
+  max-width: 450px;
+  display: flex;
+  gap: 13px;
+}
+
+.header__btn {
+@include btn-reset;
+   @include font($size: 10px);
+}
+
+.hero__title {
+  text-align: center;
+  margin-bottom: 24px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) , rgba(0, 0, 0, 1) 62%, rgba(0, 0, 0, 0));
+}

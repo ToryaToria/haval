@@ -1,0 +1,28 @@
+.application {
+  position: relative;
+
+  padding-top: 35px;
+  padding-bottom: 18px;
+
+  background-color: $color-bg;
+}
+
+.application__wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.application__title {
+  margin-bottom: 3px;
+}
+
+.application__btn {
+  min-width: 329px;
+}
+
+.application__timer {
+  width: 571px;
+  height: 130px;
+  background-color: antiquewhite;
+  color: black;
+}
