@@ -1,9 +1,4 @@
-@mixin font(
-  $size,
-  $line-height: 120%,
-  $weight: 400,
-  $color: $color-white
-) {
+@mixin font($size, $line-height: 120%, $weight: 400, $color: $color-white) {
   margin-top: 0;
   margin-bottom: 0;
   font-family: $font-base;
@@ -21,9 +16,26 @@
 }
 
 @mixin btn-reset {
-    padding: 0;
+  padding: 0;
   border: none;
   background-color: transparent;
+}
+
+@mixin icon-wrapp($gap) {
+  display: flex;
+  gap: $gap;
+  align-items: center;
+}
+
+@mixin icon($width, $height) {
+  display: block;
+  content: "";
+  width: $width;
+  height: $height;
+
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 @mixin media-desktop {

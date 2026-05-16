@@ -6,7 +6,7 @@
 // }
 
 .header__wrapper {
-  padding-top: 14px;
+  padding-top: 12px;
   padding-bottom: 14px;
 
   display: flex;
@@ -18,13 +18,27 @@
   @include font($size: 15px, $weight: 500);
   color: $color-white;
   text-decoration: none;
+
+  @include icon-wrapp(10px);
+
+  &::before {
+    @include icon(21px, 24px);
+    background-image: url(../../img/svg/tel.svg);
+  }
 }
 
 .header__address {
   max-width: 401px;
   font-style: normal;
 
-    color: $color-white;
+  color: $color-white;
+
+  @include icon-wrapp(10px);
+
+  &::before {
+    @include icon(17px, 28px);
+    background-image: url(../../img/svg/addr.svg);
+  }
 }
 
 .header__nav {
@@ -52,12 +66,17 @@
 }
 
 .header__btn {
-@include btn-reset;
-   @include font($size: 10px);
+  @include btn-reset;
+  @include font($size: 10px);
 }
 
 .hero__title {
   text-align: center;
   margin-bottom: 24px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) , rgba(0, 0, 0, 1) 62%, rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 62%,
+    rgba(0, 0, 0, 0)
+  );
 }

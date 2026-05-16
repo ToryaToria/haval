@@ -61,11 +61,24 @@
   @include btn-reset;
   display: block;
   @include font($size: 12px, $color: $color-black);
-  text-align: right;
+  text-align: left;
   width: 153px;
   cursor: pointer;
   margin-left: auto;
   margin-top: 3px;
+
+   @include icon-wrapp(8px);
+
+  &::before {
+    @include icon(28px, 28px);
+    background-image: url(../../img/svg/pen.svg);
+
+    background-color: $color-accent;
+    border-radius: 50%;
+    flex-shrink: 0;
+
+      background-size: 16px 16px;
+  }
 }
 
 .card__img {
@@ -83,7 +96,8 @@ overflow-y: hidden;
 .card__benefit {
 @include list-reset;
 display: flex;
-gap: 13px;
+gap: 13px 5px;
+
 
 flex-wrap: wrap;
 margin-bottom: 32px;
