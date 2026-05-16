@@ -1,6 +1,7 @@
-.benefit {
-  justify-content: space-between;
-}
+// .benefit {
+//   justify-content: space-between;
+// }
+
 .benefit__icon {
   @include icon-wrapp(12px);
 
@@ -10,6 +11,12 @@
     border-radius: 50%;
     flex-shrink: 0;
   }
+}
+
+.benefit__icon--hover::before {
+      background-color: $color-accent;
+      width: 32px;
+      height: 32px;
 }
 
 .benefit__icon--benifit::before {
@@ -33,7 +40,7 @@
 .benefit__icon--wallet::before {
   background-image: url(../../img/svg/wallet.svg);
 
-  background-size: 15px 13px;
+  background-size: 19px 19px;
 }
 
 .benefit__icon--winter::before {
@@ -43,5 +50,5 @@
 }
 
 .benefit__item {
-  max-width: 231px;
+  width: 231px;
 }

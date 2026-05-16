@@ -1,11 +1,11 @@
 .cards {
-  padding-top: 56px;
+  padding-top: 55px;
   padding-bottom: 19px;
 }
 
 .cards__list {
 @include list-reset;
-
+  margin-left: -12px; // подгонка под макет
 display: flex;
 gap: 31px;
 }

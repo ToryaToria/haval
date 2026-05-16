@@ -1,5 +1,5 @@
 .hero {
-  min-height: 756px;
+  min-height: 751px;
 
   background-color: $color-black;
 
@@ -11,10 +11,22 @@
 
 .hero__container {
   box-sizing: border-box;
-  padding-top: 63px;
+  padding-top: 57px;
   padding-bottom: 63px;
 }
 
 .hero__btn {
 margin: 0 auto;
+}
+
+.hero__title {
+  text-align: left;
+  margin-bottom: 23px;
+  padding: 20px 124px 9px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 62%,
+    rgba(0, 0, 0, 0)
+  );
 }
