@@ -127,8 +127,7 @@
 
         <div class="application__wrapper">
           <div class="application__timer">
-            время
-
+            <!-- <script src="//megatimer.ru/get/9bd8358aef8f9a37b7a692b4adbf210a.js"></script> -->
           </div>
 
           <button class="application__btn button" type="button">
@@ -154,9 +153,8 @@
             <p class="card__tag text-tag">В наличии
               <span class="card__tag--count">21 автомобиль</span>
             </p>
-
-            <div class="card__container">
-              <div class="card__wrapp">
+            <div class="card__container card__container--m6">
+              <div class="card__wrapp ">
                 <div class="card__header">
                   <h3 class="title-card">
                     HAVAL M6
@@ -171,17 +169,21 @@
                   </p>
                 </div>
 
-                <div class="card__slider slider">
-                  <img class="card__img" src="./img/cars/m6/m6-bl-1x.webp" alt="m6 чёрная" width="467" height="239">
+                <div class="swiper" id="m6">
+                  <div class="card__slider swiper-wrapper">
 
-                  <img class="card__img" src="./img/cars/m6/m6-gr-1x.png" alt="m6 серая" width="467" height="239">
+                    <img class="card__img swiper-slide" src="./img/cars/m6/m6-bl-1x.webp" alt="m6 чёрная" width="467"
+                      height="239">
+                    <img class="card__img swiper-slide" src="./img/cars/m6/m6-w-1x.webp" alt="m6 белая" width="467"
+                      height="239">
 
-                  <img class="card__img" src="./img/cars/m6/m6-w-1x.webp" alt="m6 белая" width="467" height="239">
+                    <img class="card__img swiper-slide" src="./img/cars/m6/m6-gr-1x.png" alt="m6 серая" width="467"
+                      height="239">
+                  </div>
                 </div>
               </div>
 
-              <div class="slider-pagination">
-                пагинация
+              <div class="slider-pagination slider-pagination--m6 swiper-pagination">
               </div>
 
               <ul class="card__benefit benefit">
@@ -212,13 +214,12 @@
               <button class=" card__btn card__btn--credit button" type="button">Рассчитать кредит</button>
               <button class=" card__btn card__btn--complete button" type="button">Подобрать комплектацию</button>
             </div>
-
           </li>
 
           <li class="card">
             <p class="card__tag text-tag">В наличии</p>
 
-            <div class="card__container">
+            <div class="card__container card__container--drago">
               <div class="card__wrapp">
                 <div class="card__header">
                   <h3 class="title-card">
@@ -233,25 +234,27 @@
                     Выгода до <span class="text-advantage--price">320 000 ₽</span>
                   </p>
                 </div>
+                <div class="swiper" id="drago" >
 
-                <div class="card__slider slider">
-                <img class="card__img" src="./img/cars/drago/dargo-red-1x.webp" alt="drago красная" width="467"
-                    height="239">
+                  <div class="card__slider swiper-wrapper">
+                    <img class="card__img swiper-slide" src="./img/cars/drago/dargo-gr-1x.webp" alt="drago серая"
+                      width="467" height="239">
 
-                  <img class="card__img" src="./img/cars/drago/dargo-black-1x.webp" alt="drago чёрная" width="467"
-                    height="239">
+                    <img class="card__img swiper-slide" src="./img/cars/drago/dargo-black-1x.webp" alt="drago чёрная"
+                      width="467" height="239">
 
-                  <img class="card__img" src="./img/cars/drago/dargo-gr-1x.webp" alt="drago серая" width="467"
-                    height="239">
 
-                  <img class="card__img" src="./img/cars/drago/dargo-w-1x.webp" alt="drago белая" width="467"
-                    height="239">
 
+                    <img class="card__img swiper-slide" src="./img/cars/drago/dargo-w-1x.webp" alt="drago белая"
+                      width="467" height="239">
+
+                    <img class="card__img swiper-slide" src="./img/cars/drago/dargo-red-1x.webp" alt="drago красная"
+                      width="467" height="239">
+                  </div>
                 </div>
               </div>
 
-              <div class="slider-pagination">
-                пагинация
+              <div class="slider-pagination swiper-pagination slider-pagination--drago">
               </div>
 
               <ul class="card__benefit benefit">
@@ -261,7 +264,8 @@
                 </li>
 
                 <li class="benefit__item">
-                  <p class="benefit__icon benefit__icon--wallet text-base">Максимальные выгоды&nbsp;по&nbsp;трейд-ин</p>
+                  <p class="benefit__icon benefit__icon--wallet text-base">Максимальные выгоды&nbsp;по&nbsp;трейд-ин
+                  </p>
                 </li>
 
 
@@ -283,17 +287,15 @@
               <button class=" card__btn card__btn--credit button" type="button">Рассчитать кредит</button>
               <button class=" card__btn card__btn--complete button" type="button">Подобрать комплектацию</button>
             </div>
-      </div>
-      </div>
-      </li>
-      </ul>
+          </li>
+        </ul>
 
       </div>
     </section>
   </main>
 
 
-  <!-- <script type="module" src="js/main.js"></script> -->
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

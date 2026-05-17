@@ -1,10 +1,70 @@
 .slider-pagination {
-color: black;
-width: 160px;
-height: 28px;
+  // color: black;
+  width: fit-content;
+  // height: 28px;
 
-background-color: aqua;
-margin: 0 auto;
+  display: flex;
+  gap: 16px;
+  margin: 0 auto;
 
-margin-bottom: 30px;
+  margin-bottom: 30px;
+  // background-color: aqua;
+
+  // .slider-pagination {
+  //   position: relative;
+  // }
+}
+
+.slider__pagination-btn {
+  @include btn-reset;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__pagination-btn:hover {
+  outline: 3px solid $color-white;
+}
+
+
+.slider__pagination-btn:active,
+.swiper-pagination-bullet-active {
+  outline: 3px solid $color-white;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.5));
+}
+
+.card__container--m6 {
+  .color-0 {
+    background-color: $color-black;
+    color: $color-white;
+  }
+
+  .color-1 {
+    background-color: $color-avto2;
+  }
+
+  .color-2 {
+    background-color: $color-avto1;
+  }
+}
+
+.card__container--drago {
+  .color-0 {
+    background-color: $color-avto1;
+    color: $color-white;
+  }
+
+  .color-1 {
+    background-color: $color-black;
+    color: $color-white;
+  }
+
+  .color-2 {
+    background-color: $color-avto2;
+  }
+
+  .color-3 {
+    background-color: $color-avto3;
+  }
 }

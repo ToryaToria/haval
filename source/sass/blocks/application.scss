@@ -2,7 +2,7 @@
   position: relative;
 
   padding-top: 35px;
-  padding-bottom: 18px;
+  padding-bottom: 9px;
 
   background-color: $color-bg;
 }
@@ -25,6 +25,8 @@
 .application__timer {
   width: 571px;
   height: 130px;
-  background-color: antiquewhite;
   color: black;
+
+  margin-top: 9px;
+  margin-left: -13px;
 }

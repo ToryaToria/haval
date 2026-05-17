@@ -30,6 +30,7 @@
 .card__container {
   background-color: $color-bg;
   padding: 39px 40px 40px 40px;
+  overflow: hidden;
 }
 
 .card__wrapp {
@@ -92,9 +93,7 @@
 
 .card__slider {
 display: flex;
-overflow-y: hidden;
-
-margin-right: 13px;
+// margin-right: 13px;
 }
 
 .card__benefit {
