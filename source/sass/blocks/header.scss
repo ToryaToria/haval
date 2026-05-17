@@ -2,9 +2,6 @@
   background-color: $color-black;
 }
 
-// .header__container {
-// }
-
 .header__wrapper {
   padding-top: 12px;
   padding-bottom: 10px;
@@ -27,6 +24,8 @@
     @include icon(21px, 24px);
     background-image: url(../../img/svg/tel.svg);
   }
+
+  @include interactive;
 }
 
 .header__address {
@@ -74,6 +73,10 @@
 .header__btn {
   @include btn-reset;
   @include font($size: 11px);
+cursor: pointer;
+    @include interactive;
 }
 
-
+.header__link {
+  @include interactive;
+}
