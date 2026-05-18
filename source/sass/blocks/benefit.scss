@@ -1,9 +1,6 @@
-// .benefit {
-//   justify-content: space-between;
-// }
-
 .benefit__icon {
   @include icon-wrapp(12px);
+  text-decoration: none;
 
   &::before {
     @include icon(28px, 28px);
@@ -11,12 +8,19 @@
     border-radius: 50%;
     flex-shrink: 0;
   }
-}
 
-.benefit__icon--hover::before {
-      background-color: $color-accent;
-      width: 32px;
-      height: 32px;
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-accent;
+    outline-offset: 3px;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 .benefit__icon--benifit::before {
@@ -51,4 +55,11 @@
 
 .benefit__item {
   width: 231px;
+}
+
+.benefit__icon:hover {
+  &::before {
+    background-color: $color-accent;
+    outline: 2px solid $color-accent;
+  }
 }

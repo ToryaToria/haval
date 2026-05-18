@@ -11,23 +11,23 @@
   border: 1px solid transparent;
   cursor: pointer;
 
-    transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 
   &:focus {
-  outline: none;
-}
+    outline: none;
+  }
 
-&:focus-visible {
-  outline: 1px solid $color-accent;
-  outline-offset: 3px;
-}
+  &:focus-visible {
+    outline: 1px solid $color-accent;
+    outline-offset: 3px;
+  }
 
-&:hover {
-background-color: $color-white;
-color: $color-accent;
-}
+  &:hover {
+    background-color: $color-white;
+    color: $color-accent;
+  }
 
-&:active {
-  opacity: 0.7;
-}
+  &:active {
+    opacity: 0.7;
+  }
 }

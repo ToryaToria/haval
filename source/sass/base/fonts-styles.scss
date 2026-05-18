@@ -6,6 +6,15 @@
     margin-left: 25px;
     color: $color-accent;
   }
+
+  @include desktop-1170 {
+    font-size: 24px;
+    line-height: 28px;
+
+    &--accent {
+      margin-left: 0;
+    }
+  }
 }
 
 .text-nav {
@@ -15,12 +24,12 @@
 
 .title-section {
   @include font($size: 16px, $color: $color-black);
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .text-tag {
   @include font($size: 12px, $weight: 500);
-      text-transform: uppercase;
+  text-transform: uppercase;
 }
 .title-card {
   @include font(
@@ -38,6 +47,10 @@
     font-weight: 500;
     color: $color-accent;
   }
+
+        @include media-tabl {
+        font-size: 18px;
+        }
 }
 
 .text-base {

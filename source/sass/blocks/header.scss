@@ -9,6 +9,30 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include desktop-1170 {
+    justify-content: flex-end;
+  }
+
+  @include media-tabl {
+    gap: 12px;
+    justify-content: center;
+  }
+}
+
+.header__logo {
+  display: block;
+  width: 307px;
+  height: 48px;
+
+  @include desktop-1170 {
+    margin-right: auto;
+  }
+
+    @include media-tabl {
+        margin-right: 0;
+    }
 }
 
 .header__tel {
@@ -26,6 +50,14 @@
   }
 
   @include interactive;
+
+  @include desktop-1170 {
+    margin-left: 20px;
+  }
+
+  @include media-tabl {
+        margin-left: 0;
+    }
 }
 
 .header__address {
@@ -55,6 +87,10 @@
   justify-content: space-between;
 
   border-top: 1px solid $color-white-20;
+
+  @include desktop-1170 {
+    flex-direction: column;
+  }
 }
 
 .header__list {
@@ -62,21 +98,36 @@
   max-width: 650px;
   display: flex;
   gap: 14px;
+
+  @include desktop-1170 {
+    margin-bottom: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .header__wrapp-btn {
   max-width: 450px;
   display: flex;
   gap: 13px;
+
+  @include desktop-1170 {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .header__btn {
   @include btn-reset;
   @include font($size: 11px);
-cursor: pointer;
-    @include interactive;
+  cursor: pointer;
+  @include interactive;
 }
 
 .header__link {
   @include interactive;
+
+  @include desktop-1170 {
+    text-align: center;
+  }
 }

@@ -49,53 +49,59 @@
     transition: transform 0.5s ease-out;
   }
 
+  &:focus {
+    outline: none;
+  }
 
-&:focus {
-  outline: none;
+  &:focus-visible {
+    outline: 1px solid currentColor;
+    outline-offset: 3px;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
-&:focus-visible {
-  outline: 1px solid currentColor;
-  outline-offset: 3px;
-}
+// @mixin media-desktop {
+//   @media (max-width: $desktop-width) {
+//     @content;
+//   }
+// }
 
-&:hover::after {
-  transform: scaleX(1);
-}
-
-&:active {
-  opacity: 0.7;
-}
-}
-@mixin media-desktop {
-  @media (min-width: $desktop-width) {
+@mixin desktop-width {
+  @media (max-width: $desktop-width) {
     @content;
   }
 }
 
-@mixin desktop-1024 {
-  @media (min-width: $desktop-1024) {
-    @content;
-  }
-}
-
-@mixin desktop-1280 {
-  @media (min-width: $desktop-1280) {
+@mixin desktop-1170 {
+  @media (max-width: $desktop-1170) {
     @content;
   }
 }
 
 @mixin media-tabl {
-  @media (min-width: $tabl-width) {
+  @media (max-width: $tabl-width) {
     @content;
   }
 }
 
-@mixin media-mobile {
-  @media (min-width: $mobile-width) {
+@mixin tabl-580 {
+  @media (max-width: $tabl-580) {
     @content;
   }
 }
+
+// @mixin media-mobile {
+//   @media (max-width: $mobile-width) {
+//     @content;
+//   }
+// }
 
 @mixin hover-line($bg-color: currentColor) {
   content: "";

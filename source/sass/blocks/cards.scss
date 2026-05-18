@@ -4,8 +4,14 @@
 }
 
 .cards__list {
-@include list-reset;
+  @include list-reset;
   margin-left: -12px; // подгонка под макет
-display: flex;
-gap: 31px;
+  display: flex;
+  gap: 31px;
+
+  @include desktop-1170 {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0;
+  }
 }

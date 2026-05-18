@@ -15,4 +15,8 @@ border: 7px solid $color-border;
 border-radius: 50%;
 background-color: $color-black;
 cursor: pointer;
+
+    @include desktop-width {
+    left: 15px;
+    }
 }
