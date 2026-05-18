@@ -1,0 +1,139 @@
+.header {
+  background-color: $color-black;
+}
+
+.header__wrapper {
+  padding-top: 12px;
+  padding-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include desktop-1170 {
+    justify-content: flex-end;
+  }
+
+  @include media-tabl {
+    gap: 12px;
+    justify-content: center;
+  }
+}
+
+.header__logo {
+  display: block;
+  width: 307px;
+  height: 48px;
+
+  @include desktop-1170 {
+    margin-right: auto;
+  }
+
+  @include media-tabl {
+    margin-right: 0;
+  }
+}
+
+.header__tel {
+  @include font($size: 15px, $weight: 500);
+
+  color: $color-white;
+  text-decoration: none;
+
+  max-width: 250px;
+
+  @include icon-wrapp(10px);
+
+  &::before {
+    @include icon(21px, 24px);
+
+    background-image: url("../../img/svg/tel.svg");
+  }
+
+  @include interactive;
+
+  @include desktop-1170 {
+    margin-left: 20px;
+  }
+
+  @include media-tabl {
+    margin-left: 0;
+  }
+}
+
+.header__address {
+  max-width: 450px;
+  font-style: normal;
+
+  color: $color-white;
+
+  @include icon-wrapp(10px);
+
+  &::before {
+    @include icon(17px, 28px);
+
+    background-image: url("../../img/svg/addr.svg");
+  }
+
+  &--13 {
+    font-size: 13px;
+  }
+}
+
+.header__nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid $color-white-20;
+
+  @include desktop-1170 {
+    flex-direction: column;
+  }
+}
+
+.header__list {
+  @include list-reset;
+
+  max-width: 650px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+
+  @include desktop-1170 {
+    margin-bottom: 12px;
+    justify-content: center;
+  }
+}
+
+.header__wrapp-btn {
+  max-width: 450px;
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+
+  @include desktop-1170 {
+    justify-content: center;
+  }
+}
+
+.header__btn {
+  @include btn-reset;
+  @include font($size: 11px);
+
+  cursor: pointer;
+
+  @include interactive;
+}
+
+.header__link {
+  @include interactive;
+
+  @include desktop-1170 {
+    text-align: center;
+  }
+}

@@ -1,0 +1,63 @@
+.title-hero {
+  @include font($size: 40px, $line-height: 60px, $weight: 500);
+
+  // letter-spacing: 0.024em;
+
+  &--accent {
+    margin-left: 25px;
+    color: $color-accent;
+  }
+
+  @include desktop-1170 {
+    font-size: 24px;
+    line-height: 28px;
+
+    &--accent {
+      margin-left: 0;
+    }
+  }
+}
+
+.text-nav {
+  @include font($size: 10.66px, $weight: 500);
+
+  text-decoration: none;
+}
+
+.title-section {
+  @include font($size: 16px, $color: $color-black);
+
+  text-transform: uppercase;
+}
+
+.text-tag {
+  @include font($size: 12px, $weight: 500);
+
+  text-transform: uppercase;
+}
+
+.title-card {
+  @include font(
+    $size: 22px,
+    $line-height: 31px,
+    $weight: 500,
+    $color: $color-black
+  );
+}
+
+.text-advantage {
+  @include font($size: 20px, $color: $color-black);
+
+  &--price {
+    font-weight: 500;
+    color: $color-accent;
+  }
+
+  @include media-tabl {
+    font-size: 18px;
+  }
+}
+
+.text-base {
+  @include font($size: 12px, $color: $color-black);
+}

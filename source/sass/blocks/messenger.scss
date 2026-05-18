@@ -1,0 +1,23 @@
+.messenger {
+  position: absolute;
+  left: 48px;
+  bottom: 10px;
+
+  @include btn-reset;
+
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+
+  border: 7px solid $color-border;
+  border-radius: 50%;
+  background-color: $color-black;
+  cursor: pointer;
+
+  @include desktop-width {
+    left: 15px;
+  }
+}

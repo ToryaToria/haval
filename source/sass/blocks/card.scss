@@ -1,0 +1,159 @@
+.card {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 560px;
+  padding-top: 22px;
+
+  @include desktop-1170 {
+    max-width: 1140px;
+    width: auto;
+  }
+}
+
+.card__tag {
+  box-sizing: border-box;
+  width: 187px;
+  height: 42px;
+  padding: 7px 20px;
+
+  position: absolute;
+  top: 0;
+  right: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: $color-accent;
+
+  &--count {
+    color: $color-black;
+  }
+}
+
+.card__container {
+  background-color: $color-bg;
+  padding: 39px 40px 40px;
+  overflow: hidden;
+}
+
+.card__wrapp {
+  box-sizing: border-box;
+  width: 480px;
+  height: 356px;
+  border: 1px solid $color-border-card;
+
+  margin-bottom: 26px;
+
+  background-color: $color-white;
+  background-image: url("../../img/cars/card-bg.svg");
+
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  @include desktop-1170 {
+    margin: 0 auto;
+    margin-bottom: 26px;
+  }
+
+  @include media-tabl {
+    width: 330px;
+    height: auto;
+  }
+}
+
+.card__header {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px 0;
+
+  padding: 24px 24px 0;
+  margin-bottom: 13px;
+
+  @include media-tabl {
+    justify-content: center;
+  }
+}
+
+.card__sign-up {
+  @include btn-reset;
+
+  display: block;
+
+  @include font($size: 12px, $color: $color-black);
+
+  text-align: left;
+  width: 153px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: 3px;
+
+  @include icon-wrapp(8px);
+
+  &::before {
+    @include icon(28px, 28px);
+
+    background-image: url("../../img/svg/pen.svg");
+
+    background-color: $color-accent;
+    border-radius: 50%;
+    flex-shrink: 0;
+
+    background-size: 16px 16px;
+  }
+}
+
+.card__swiper {
+  overflow: hidden;
+}
+
+.card__img {
+  display: block;
+  width: 467px;
+  height: 239px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.card__slider {
+  display: flex;
+}
+
+.card__benefit {
+  @include list-reset;
+
+  display: flex;
+  gap: 13px 5px;
+  flex-wrap: wrap;
+
+  margin-left: 8px;
+  margin-bottom: 32px;
+
+  @include desktop-1170 {
+    max-width: 600px;
+    justify-content: center;
+    gap: 13px;
+  }
+}
+
+.card__btn {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 14px;
+
+  padding: 21px 23px 20px;
+
+  &--credit {
+    color: $color-white;
+    background-color: $color-black;
+  }
+
+  &--complete {
+    color: $color-black;
+    background-color: transparent;
+    border: 1px solid $color-black;
+  }
+}

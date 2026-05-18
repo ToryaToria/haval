@@ -1,0 +1,18 @@
+.cards {
+  padding-top: 55px;
+  padding-bottom: 19px;
+}
+
+.cards__list {
+  @include list-reset;
+
+  margin-left: -12px; // подгонка под макет
+  display: flex;
+  gap: 31px;
+  flex-wrap: wrap;
+
+  @include desktop-1170 {
+    justify-content: center;
+    margin-left: 0;
+  }
+}
