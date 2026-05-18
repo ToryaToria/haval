@@ -193,7 +193,8 @@
                 </li>
 
                 <li class="benefit__item">
-                  <a class="benefit__icon benefit__icon--wallet text-base" href="#">Максимальные выгоды&nbsp;по&nbsp;трейд-ин</a>
+                  <a class="benefit__icon benefit__icon--wallet text-base" href="#">Максимальные
+                    выгоды&nbsp;по&nbsp;трейд-ин</a>
                 </li>
 
                 <li class="benefit__item">
@@ -201,11 +202,13 @@
                 </li>
 
                 <li class="benefit__item">
-                  <a class="benefit__icon benefit__icon--winter text-base" href="#">Зимние&nbsp;шины&nbsp;в&nbsp;подарок</a>
+                  <a class="benefit__icon benefit__icon--winter text-base"
+                    href="#">Зимние&nbsp;шины&nbsp;в&nbsp;подарок</a>
                 </li>
 
                 <li class="benefit__item">
-                  <a class="benefit__icon benefit__icon--gift text-base" href="#">Доп.оборудование на&nbsp;100&nbsp;000р в
+                  <a class="benefit__icon benefit__icon--gift text-base" href="#">Доп.оборудование на&nbsp;100&nbsp;000р
+                    в
                     подарок</a>
                 </li>
               </ul>
@@ -234,7 +237,7 @@
                     Выгода до <span class="text-advantage--price">320 000 ₽</span>
                   </p>
                 </div>
-                <div class="card__swiper swiper" id="drago" >
+                <div class="card__swiper swiper" id="drago">
 
                   <div class="card__slider swiper-wrapper">
                     <img class="card__img swiper-slide" src="./img/cars/drago/dargo-gr-1x.webp" alt="drago серая"
@@ -255,14 +258,15 @@
               <div class="slider-pagination swiper-pagination slider-pagination--drago">
               </div>
 
-               <ul class="card__benefit benefit">
+              <ul class="card__benefit benefit">
                 <li class="benefit__item">
                   <a class="benefit__icon benefit__icon--hover benefit__icon--benifit text-base" href="#">Выгода
                     по&nbsp;госпрограмме</a>
                 </li>
 
                 <li class="benefit__item">
-                  <a class="benefit__icon benefit__icon--wallet text-base" href="#">Максимальные выгоды&nbsp;по&nbsp;трейд-ин</a>
+                  <a class="benefit__icon benefit__icon--wallet text-base" href="#">Максимальные
+                    выгоды&nbsp;по&nbsp;трейд-ин</a>
                 </li>
 
                 <li class="benefit__item">
@@ -270,11 +274,13 @@
                 </li>
 
                 <li class="benefit__item">
-                  <a class="benefit__icon benefit__icon--winter text-base" href="#">Зимние&nbsp;шины&nbsp;в&nbsp;подарок</a>
+                  <a class="benefit__icon benefit__icon--winter text-base"
+                    href="#">Зимние&nbsp;шины&nbsp;в&nbsp;подарок</a>
                 </li>
 
                 <li class="benefit__item">
-                  <a class="benefit__icon benefit__icon--gift text-base" href="#">Доп.оборудование на&nbsp;100&nbsp;000р в
+                  <a class="benefit__icon benefit__icon--gift text-base" href="#">Доп.оборудование на&nbsp;100&nbsp;000р
+                    в
                     подарок</a>
                 </li>
               </ul>
@@ -288,6 +294,30 @@
 
       </div>
     </section>
+
+    <dialog class="dialog" aria-modal="true" aria-label="форма запроса" aria-labelledby="dialog-title" id="dialog">
+      <div class="dialog__wrapper">
+        <button class="dialog__btn-close" type="button" value="close">
+          <span class="visually-hidden">закрыть модальное окно</span>
+        </button>
+
+        <h2 class="dialog__title title-hero">
+          Оставьте ваши контакты <br> - мы перезвоним!
+        </h2>
+
+        <form class="dialog__form" action="https://echo.ru" method="dialog" autocomplete="off">
+          <label class="dialog__label">
+            <span class="text-base">Телефон: </span>
+            <input class="dialog__field" type="tel" name="phone" placeholder="+7(495)123-45-67" required
+              pattern="[^A-Za-zА-Яа-яЁё]+$">
+          </label>
+
+          <button class="dialog__button button text-button" type="submit" value="submit">
+            отправить
+          </button>
+        </form>
+      </div>
+
   </main>
 
 

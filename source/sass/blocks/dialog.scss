@@ -1,0 +1,130 @@
+.dialog,
+.dialog[open].dialog--close {
+  box-sizing: border-box;
+  max-width: 800px;
+  padding: 0;
+  background-color: $color-white;
+  margin: auto;
+
+  border: none;
+
+  &::backdrop {
+    background-color: rgba(111, 110, 110, 0.6);
+  }
+
+    @include tabl-580 {
+    width: 300px;
+  }
+}
+
+.dialog[open] {
+  display: block;
+}
+
+.dialog__wrapper {
+  padding: 10px 24px 40px;
+}
+
+.dialog__btn-close {
+  @include btn-reset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 26px;
+  height: 26px;
+  margin-left: auto;
+  margin-bottom: 8px;
+  margin-right: -12px;
+  cursor: pointer;
+
+  border-radius: 50%;
+  border: 1px solid $color-black;
+  background-color: $color-white;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url("../../img/svg/cross.svg");
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-accent;
+    outline-offset: 3px;
+  }
+
+  &:hover {
+    background-color: $color-accent;
+    border: 1px solid $color-accent;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.dialog__title {
+  color: $color-black;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.dialog__text {
+  color: $color-black;
+  margin-bottom: 8px;
+}
+
+.dialog__label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.dialog__field {
+  border-color: $color-black;
+  background-color: transparent;
+  width: 100%;
+  color: $color-black;
+  height: auto;
+
+  box-sizing: border-box;
+  border: 1px solid $color-black;
+  padding: 8px;
+
+  &:not(:disabled):focus-visible {
+    outline: none;
+  }
+
+  &:not(:disabled):focus-visible,
+  &:not(:disabled):hover,
+  &:not(:disabled):active {
+    border-color: $color-accent;
+  }
+
+  &:disabled {
+    border-color: $color-avto1;
+    background-color: $color-avto2;
+  }
+}
+
+.dialog__button {
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
+
+    @include tabl-580 {
+padding-left: 20px;
+  padding-right: 20px;
+ }
+}
