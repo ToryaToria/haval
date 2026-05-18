@@ -30,13 +30,14 @@
     margin-right: auto;
   }
 
-    @include media-tabl {
-        margin-right: 0;
-    }
+  @include media-tabl {
+    margin-right: 0;
+  }
 }
 
 .header__tel {
   @include font($size: 15px, $weight: 500);
+
   color: $color-white;
   text-decoration: none;
 
@@ -46,7 +47,8 @@
 
   &::before {
     @include icon(21px, 24px);
-    background-image: url(../../img/svg/tel.svg);
+
+    background-image: url("../../img/svg/tel.svg");
   }
 
   @include interactive;
@@ -56,8 +58,8 @@
   }
 
   @include media-tabl {
-        margin-left: 0;
-    }
+    margin-left: 0;
+  }
 }
 
 .header__address {
@@ -70,7 +72,8 @@
 
   &::before {
     @include icon(17px, 28px);
-    background-image: url(../../img/svg/addr.svg);
+
+    background-image: url("../../img/svg/addr.svg");
   }
 
   &--13 {
@@ -95,14 +98,15 @@
 
 .header__list {
   @include list-reset;
+
   max-width: 650px;
   display: flex;
   gap: 14px;
+  flex-wrap: wrap;
 
   @include desktop-1170 {
     margin-bottom: 12px;
     justify-content: center;
-    flex-wrap: wrap;
   }
 }
 
@@ -110,17 +114,19 @@
   max-width: 450px;
   display: flex;
   gap: 13px;
+  flex-wrap: wrap;
 
   @include desktop-1170 {
     justify-content: center;
-    flex-wrap: wrap;
   }
 }
 
 .header__btn {
   @include btn-reset;
   @include font($size: 11px);
+
   cursor: pointer;
+
   @include interactive;
 }
 

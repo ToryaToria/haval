@@ -1,9 +1,11 @@
 .benefit__icon {
   @include icon-wrapp(12px);
+
   text-decoration: none;
 
   &::before {
     @include icon(28px, 28px);
+
     background-color: $color-black;
     border-radius: 50%;
     flex-shrink: 0;
@@ -24,31 +26,31 @@
 }
 
 .benefit__icon--benifit::before {
-  background-image: url(../../img/svg/pricetags.svg);
+  background-image: url("../../img/svg/pricetags.svg");
 
   background-size: 18px 18px;
 }
 
 .benefit__icon--kasko::before {
-  background-image: url(../../img/svg/shield.svg);
+  background-image: url("../../img/svg/shield.svg");
 
   background-size: 16px 16px;
 }
 
 .benefit__icon--gift::before {
-  background-image: url(../../img/svg/gift.svg);
+  background-image: url("../../img/svg/gift.svg");
 
   background-size: 18px 18px;
 }
 
 .benefit__icon--wallet::before {
-  background-image: url(../../img/svg/wallet.svg);
+  background-image: url("../../img/svg/wallet.svg");
 
   background-size: 19px 19px;
 }
 
 .benefit__icon--winter::before {
-  background-image: url(../../img/svg/winter.svg);
+  background-image: url("../../img/svg/winter.svg");
 
   background-size: 18px 18px;
 }

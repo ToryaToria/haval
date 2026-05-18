@@ -1,4 +1,4 @@
-const btn = document.querySelector('.hero__btn');
+const btns = document.querySelectorAll('.button');
 const modal = document.querySelector('#dialog');
 const buttonCloser = modal.querySelector('.dialog__btn-close');
 
@@ -17,9 +17,12 @@ const handleModalClick = ({ currentTarget, target }) => {
   }
 };
 
-btn.addEventListener('click', () => {
+btns.forEach((target) => {
+
+target.addEventListener('click', () => {
   modal.style.display = 'block';
   modal.showModal();
+});
 });
 
 buttonCloser.addEventListener('click', () => {

@@ -33,7 +33,7 @@
     margin-bottom: 24px;
   }
 
-    @include tabl-580 {
+  @include tabl-580 {
     margin-bottom: 0;
   }
 }
@@ -51,7 +51,7 @@
 .application__timer {
   width: 571px;
   height: 130px;
-  color: black;
+  color: $color-black;
 
   margin-top: 9px;
   margin-left: -13px;
@@ -65,22 +65,22 @@
     height: auto;
   }
 }
+
 .application__timer div {
   @include tabl-580 {
     transform: scale(0.8) !important;
     transform-origin: center center;
-    // background-color: aqua;
   }
 
-  @media (max-width: 480px) {
-    transform: scale(0.7) !important; /* Уменьшаем до 60% для узких экранов */
+  @media (width <= 480px) {
+    transform: scale(0.7) !important;
   }
 
-   @media (max-width: 400px) {
-    transform: scale(0.6) !important; /* Уменьшаем до 60% для узких экранов */
+  @media (width <= 400px) {
+    transform: scale(0.6) !important;
   }
 
-  @media (max-width: 360px) {
-    transform: scale(0.5) !important; /* Уменьшаем до 60% для узких экранов */
+  @media (width <= 360px) {
+    transform: scale(0.5) !important;
   }
 }

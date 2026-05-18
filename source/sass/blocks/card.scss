@@ -34,7 +34,7 @@
 
 .card__container {
   background-color: $color-bg;
-  padding: 39px 40px 40px 40px;
+  padding: 39px 40px 40px;
   overflow: hidden;
 }
 
@@ -47,7 +47,7 @@
   margin-bottom: 26px;
 
   background-color: $color-white;
-  background-image: url(../../img/cars/card-bg.svg);
+  background-image: url("../../img/cars/card-bg.svg");
 
   background-position: center;
   background-size: auto;
@@ -58,10 +58,10 @@
     margin-bottom: 26px;
   }
 
-    @include media-tabl {
+  @include media-tabl {
     width: 330px;
-  height: auto;
-    }
+    height: auto;
+  }
 }
 
 .card__header {
@@ -70,18 +70,21 @@
   flex-wrap: wrap;
   gap: 20px 0;
 
-  padding: 24px 24px 0 24px;
+  padding: 24px 24px 0;
   margin-bottom: 13px;
 
-      @include media-tabl {
-      justify-content: center;
-      }
+  @include media-tabl {
+    justify-content: center;
+  }
 }
 
 .card__sign-up {
   @include btn-reset;
+
   display: block;
+
   @include font($size: 12px, $color: $color-black);
+
   text-align: left;
   width: 153px;
   cursor: pointer;
@@ -92,7 +95,8 @@
 
   &::before {
     @include icon(28px, 28px);
-    background-image: url(../../img/svg/pen.svg);
+
+    background-image: url("../../img/svg/pen.svg");
 
     background-color: $color-accent;
     border-radius: 50%;
@@ -120,6 +124,7 @@
 
 .card__benefit {
   @include list-reset;
+
   display: flex;
   gap: 13px 5px;
   flex-wrap: wrap;
@@ -139,7 +144,7 @@
   margin-bottom: 10px;
   font-size: 14px;
 
-  padding: 21px 23px 20px 23px;
+  padding: 21px 23px 20px;
 
   &--credit {
     color: $color-white;

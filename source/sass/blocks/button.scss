@@ -1,10 +1,13 @@
 .button {
   box-sizing: border-box;
+
   @include btn-reset;
+
   display: block;
-  padding: 22px 23px 17px 23px;
+  padding: 22px 23px 17px;
 
   @include font($size: 16px, $weight: 500);
+
   text-transform: uppercase;
 
   background-color: $color-accent;
